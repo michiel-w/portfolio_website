@@ -9,42 +9,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <title>Michiel Wouters</title>
 </head>
 <body>
-    <div class="button">
-        code mode
+    <div id="button">
+        <p class="code-mode">Code mode</p>
     </div>
-    <div class="glass-box-header">
+    <div id="button-neumorphic">
+        <p class="neumorphic-mode">Neumorphic mode</p>
+    </div>
+    <div id="glass-box-header">
     <header>
-        <h1>Michiel Wouters</h1>
+        <h1 class="code-text">Michiel Wouters</h1>
         <nav>
             <ul>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="code-text">About me</a></li>
+                <li><a href="#" class="code-text">Skills</a></li>
+                <li><a href="contact/contact.html" class="code-text">Contact</a></li>
             </ul>
         </nav>
     </header>
     </div>
-    <div class="glass-box-main">
+    <div id="glass-box-main">
     <main>
-        <h2>About me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h2>Work experience</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2 class="code-text">About me</h2>
+            <p class="code-text">Hi there! I am Michiel Wouters. I recently started an online course on Front-End Development.
+            I am still an <span class="focus">absolute</span> beginner. I would like to continue this carreer path 
+            and learn some addition languages and frameworks (Python, SQL, React, ...). I still have long way to go, but I am prepared to learn. 
+            <span class="focus">Ready, set, code!</span>
+            </p>
+        <h2 class="code-text">Work experience</h2>
+            <p class="code-text">I do not have any work experience in tech yet. I am currently working as a 
+            <span class="focus"> back office assistant</span> for an international bicycle manufacturer. 
+            My tasks include: helping customers before, during and after their purchase, supporting sales agents abroad, issuing invoices</p>
+        <h2 class="code-text">Skills</h2>
+            <p class="code-text">
+                <ul class="list code-text" id="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>(hopefully, more to add soon)</li>
+                </ul>
+            </p>
     </main>
     <footer>
-        <p>Copyright 2023 - Michiel Wouters</p>
+        <p id="footer">Copyright 2023 - Michiel Wouters</p>
     </footer>
     </div>
+
+    <script src="script.js"></script>  
+
 </body>
 </html>
